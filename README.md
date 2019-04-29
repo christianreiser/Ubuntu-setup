@@ -48,7 +48,7 @@ make # error
 cp -r pycocotools ~/code/models/research/
 ...
 
-#### next/cloud
+#### next/cloud MAYBE BETTER FORM SOFTWARE CENTER: NEXTCLOUD CLIENT
 sudo add-apt-repository ppa:nextcloud-devs/client
 
 sudo apt update
