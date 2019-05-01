@@ -21,7 +21,7 @@ sudo apt install python3-pip
 
 sudo apt install git
 
-sudo dpkg-reconfigure keyboard-configuration 
+sudo apt-get install exfat-utils exfat-fuse 
 
 
 
