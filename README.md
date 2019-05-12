@@ -29,6 +29,8 @@ sudo apt-get install exfat-utils exfat-fuse
 ### pip
 pip3 install numpy
 
+pip3 install pandas
+
 pip3 install tensorflow
 
 
