@@ -23,6 +23,8 @@ sudo apt install git
 
 sudo apt-get install exfat-utils exfat-fuse 
 
+sudo apt-get install python3-tk
+
 
 
 
