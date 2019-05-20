@@ -6,7 +6,8 @@ google
 
 nextcloud
 
-### programs
+
+### apt
 sudo apt update
 
 sudo apt-get install chromium-browser
@@ -27,13 +28,16 @@ sudo apt-get install python3-tk
 
 
 
-
 ### pip
 pip3 install numpy
 
 pip3 install pandas
 
 pip3 install tensorflow
+
+
+### snap
+sudo snap install pycharm-community --classic
 
 
 ### detection api
