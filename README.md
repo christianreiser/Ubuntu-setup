@@ -10,30 +10,12 @@ nextcloud
 ### apt
 sudo apt update
 
-sudo apt-get install chromium-browser
-
-sudo apt install unity-tweak-tool
-
-sudo apt install htop
-
-sudo apt install python3-pip
-
-%sudo apt install python-pip
-
-sudo apt install git
-
-sudo apt-get install exfat-utils exfat-fuse 
-
-sudo apt-get install python3-tk
+sudo apt-get install chromium-browser unity-tweak-tool htop python3-pip git vim exfat-utils exfat-fuse  python3-tk
 
 
 
 ### pip
-pip3 install numpy
-
-pip3 install pandas
-
-pip3 install tensorflow
+pip3 install numpy pandas tensorflow
 
 
 ### snap
@@ -41,16 +23,7 @@ sudo snap install pycharm-community --classic
 
 
 ### detection api
-pip3 install --user Cython
-pip3 install --user contextlib2
-
-pip3 install --user pillow
-
-pip3 install --user lxml
-
-pip3 install --user jupyter
-
-pip3 install --user matplotlib
+pip3 install --user Cython contextlib2 pillow lxml jupyter matplotlib
 
 mkdir code && cd code && git clone https://github.com/cocodataset/cocoapi.git
 
