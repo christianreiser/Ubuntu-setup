@@ -38,3 +38,16 @@ sudo apt install nextcloud-client
 dconf dump / > mysettings.ini
 
 dconf load / < mysettings.ini
+
+### connect bt device [2C:41:A1:CA:5F:E0] with custom command [cb]
+mkdir -p ~/scripts
+vi ~/scripts/autopair
+
+#!/bin/bash
+bluetoothctl << EOF
+connect 2C:41:A1:CA:5F:E0
+EOF
+
+:x
+chmod +x ~/scripts/autopair
+alias cb='~/scripts/autopair'
