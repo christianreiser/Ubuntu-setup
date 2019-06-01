@@ -41,6 +41,7 @@ nextcloud
 
 ### connect bt device [2C:41:A1:CA:5F:E0] with custom command [cb]
 ```mkdir -p ~/scripts```
+
 ```vi ~/scripts/autopair```
 
 ```#!/bin/bash
