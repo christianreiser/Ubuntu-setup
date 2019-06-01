@@ -49,5 +49,9 @@ connect 2C:41:A1:CA:5F:E0
 EOF
 
 :x
+
 chmod +x ~/scripts/autopair
+
+vim ~/.bashrc
 alias cb='~/scripts/autopair'
+:x
