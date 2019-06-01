@@ -46,8 +46,8 @@ nextcloud
 ```#!/bin/bash
 bluetoothctl << EOF
 connect 2C:41:A1:CA:5F:E0
-EOF```
+EOF
 
-```:x```
-```chmod +x ~/scripts/autopair```
-```alias cb='~/scripts/autopair'```
+:x
+chmod +x ~/scripts/autopair
+alias cb='~/scripts/autopair'
