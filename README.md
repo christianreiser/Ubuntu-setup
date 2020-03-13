@@ -40,19 +40,48 @@ nextcloud
 ```dconf load / < mysettings.ini```
 
 ### connect bt device [2C:41:A1:CA:5F:E0] with custom command [cb]
+create scrips dir:
 ```mkdir -p ~/scripts```
 
+open/create file in vi:
 ```vi ~/scripts/autopair```
 
+paste the following in the file:
 ```#!/bin/bash
 bluetoothctl << EOF
 connect 2C:41:A1:CA:5F:E0
-EOF
+EOF```
 
+close file
+```:x```
+
+make file executable:
+```chmod +x ~/scripts/autopair```
+
+create alias (commandline abbreviation):
+```vim ~/.bashrc
+alias cb='~/scripts/autopair'```
+
+close file
 :x
 
-chmod +x ~/scripts/autopair
+### screenlogger
+install:
+```sudo apt-get install scrot```
 
-vim ~/.bashrc
-alias cb='~/scripts/autopair'
-:x
+open/create file in vi:
+```vi ~/scripts/screenlogger```
+
+paste the following in the file:
+```while true; do scrot -d 60 'screenLog%Y%m%d%H%M%S.jpg' -e 'mv $f ~/screenLogger/'; done```
+
+close file
+```:x```
+
+make file executable:
+```chmod +x ~/scripts/screenlogger```
+
+add to startup application:
+open ```startup applications```
+paste ```~/scripts/screenlogger``` as command
+
