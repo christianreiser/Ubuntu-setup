@@ -47,10 +47,12 @@ open/create file in vi:
 ```vi ~/scripts/autopair```
 
 paste the following in the file:
-```#!/bin/bash
+```
+#!/bin/bash
 bluetoothctl << EOF
 connect 2C:41:A1:CA:5F:E0
-EOF```
+EOF
+```
 
 close file
 ```:x```
@@ -59,11 +61,13 @@ make file executable:
 ```chmod +x ~/scripts/autopair```
 
 create alias (commandline abbreviation):
-```vim ~/.bashrc
-alias cb='~/scripts/autopair'```
+```
+vim ~/.bashrc
+alias cb='~/scripts/autopair'
+```
 
 close file
-:x
+```:x```
 
 ### screenlogger
 install:
