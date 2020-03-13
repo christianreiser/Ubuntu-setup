@@ -1,0 +1,1 @@
+sudo logkeys -s --keymap=/home/chrei/code/Ubuntu-setup/keymap_de --output=/home/chrei/screenLogger/logkeys/logkeys.log

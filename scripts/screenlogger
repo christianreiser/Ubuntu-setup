@@ -1,0 +1,1 @@
+while true; do scrot -d 60 'screenLog%Y%m%d%H%M%S.jpg' -e 'mv $f ~/screenLogger/'; done
