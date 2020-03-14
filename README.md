@@ -41,10 +41,10 @@ nextcloud
 
 ### connect bt device [2C:41:A1:CA:5F:E0] with custom command [cb]
 create scrips dir:
-```mkdir -p ~/scripts```
+```mkdir -p /home/chrei/code/Ubuntu-setup/scripts```
 
 open/create file in vi:
-```vi ~/scripts/autopair```
+```vi /home/chrei/code/Ubuntu-setup/scripts/autopair```
 
 paste the following in the file:
 ```
@@ -58,12 +58,12 @@ close file
 ```:x```
 
 make file executable:
-```chmod +x ~/scripts/autopair```
+```chmod +x /home/chrei/code/Ubuntu-setup/scripts/autopair```
 
 create alias (commandline abbreviation):
 ```
 vim ~/.bashrc
-alias cb='~/scripts/autopair'
+alias cb='/home/chrei/code/Ubuntu-setup/scripts/autopair'
 ```
 
 close file
@@ -74,7 +74,7 @@ install:
 ```sudo apt-get install scrot```
 
 open/create file in vi:
-```vi /home/chrei/scripts/screenlogger```
+```vi /home/chrei/code/Ubuntu-setup/scripts/screenlogger```
 
 paste the following in the file:
 ```while true; do scrot -d 60 'screenLog%Y%m%d%H%M%S.jpg' -e 'mv $f /home/chrei/screenLogger/'; done```
@@ -83,11 +83,13 @@ close file
 ```:x```
 
 make file executable:
-```chmod +x /home/chrei/scripts/screenlogger```
+```chmod +x /home/chrei/code/Ubuntu-setup/scripts/screenlogger```
 
-add to startup application:
-open ```startup applications```
-paste ```/home/chrei/scripts/screenlogger``` as command
+create alias (commandline abbreviation):
+```
+vim ~/.bashrc
+alias logk='/home/chrei/Ubuntu-setup/scripts/screenlogger'
+```
 
 
 ### keylogger
@@ -107,8 +109,10 @@ close file
 make file executable:
 ```chmod +x /home/chrei/code/Ubuntu-setup/scripts/logkeys```
 
-add to startup application:
-open ```startup applications```
-paste ```/home/chrei/Ubuntu-setup/scripts/logkeys``` as command
+create alias (commandline abbreviation):
+```
+vim ~/.bashrc
+alias logk='/home/chrei/Ubuntu-setup/scripts/logkeys'
+```
 
 
