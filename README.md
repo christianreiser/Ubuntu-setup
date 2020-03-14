@@ -74,18 +74,41 @@ install:
 ```sudo apt-get install scrot```
 
 open/create file in vi:
-```vi ~/scripts/screenlogger```
+```vi /home/chrei/scripts/screenlogger```
 
 paste the following in the file:
-```while true; do scrot -d 60 'screenLog%Y%m%d%H%M%S.jpg' -e 'mv $f ~/screenLogger/'; done```
+```while true; do scrot -d 60 'screenLog%Y%m%d%H%M%S.jpg' -e 'mv $f /home/chrei/screenLogger/'; done```
 
 close file
 ```:x```
 
 make file executable:
-```chmod +x ~/scripts/screenlogger```
+```chmod +x /home/chrei/scripts/screenlogger```
 
 add to startup application:
 open ```startup applications```
-paste ```~/scripts/screenlogger``` as command
+paste ```/home/chrei/scripts/screenlogger``` as command
+
+
+### keylogger
+source: https://github.com/kernc/logkeys
+
+maybe installation needed
+
+open/create file in vi:
+```vi /home/chrei/code/Ubuntu-setup/scripts/logkeys```
+
+paste the following in the file:
+```sudo logkeys -s --keymap=keymap_de --output=/home/chrei/screenLogger/keylogger/logkeys.log```
+
+close file
+```:x```
+
+make file executable:
+```chmod +x /home/chrei/code/Ubuntu-setup/scripts/logkeys```
+
+add to startup application:
+open ```startup applications```
+paste ```/home/chrei/Ubuntu-setup/scripts/logkeys``` as command
+
 
