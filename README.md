@@ -12,7 +12,9 @@ nextcloud
 
 ```sudo apt-get install chromium-browser unity-tweak-tool htop python3-pip git vim exfat-utils exfat-fuse  python3-tk```
 
-
+### Ubuntu software store
+```pomodoro```
+```LibreOffice```
 
 ### pip
 ```pip3 install --user numpy pandas tensorflow scikit-image Cython contextlib2 pillow lxml jupyter matplotlib```
