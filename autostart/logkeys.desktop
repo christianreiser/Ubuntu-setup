@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=~/code/Ubuntu-setup/scripts/logkeys
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=logkeys
+Name=logkeys
+Comment[en_US]=
+Comment=

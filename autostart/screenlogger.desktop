@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=~/code/Ubuntu-setup/scripts/screenlogger
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=screenlogger
+Name=screenlogger
+Comment[en_US]=
+Comment=
