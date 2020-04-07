@@ -37,6 +37,16 @@ nextcloud
 
 ```sudo apt install nextcloud-client```
 
+### rescuetime
+```wget https://www.rescuetime.com/installers/rescuetime_current_amd64.deb```
+
+```sudo apt install ./rescuetime_current_amd64.deb```
+
+```rescuetime```
+
+```gabrielre1990@gmail.com```
+
+
 
 
 
