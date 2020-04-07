@@ -20,6 +20,7 @@ nextcloud
 ### Ubuntu software store
 ```pomodoro```
 ```LibreOffice```
+```Canary```
 
 ### pip
 ```pip3 install --user numpy pandas tensorflow scikit-image Cython contextlib2 pillow lxml jupyter matplotlib```
