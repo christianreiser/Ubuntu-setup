@@ -48,34 +48,14 @@ nextcloud
 ```dconf load / < mysettings.ini```
 
 ### connect bt device [2C:41:A1:CA:5F:E0] with custom command [cb]
-create scrips dir:
-```mkdir -p /home/chrei/code/Ubuntu-setup/scripts```
-
-open/create file in vi:
-```vi /home/chrei/code/Ubuntu-setup/scripts/autopair```
-
-paste the following in the file:
-```
-#!/bin/bash
-bluetoothctl << EOF
-connect 2C:41:A1:CA:5F:E0
-EOF
-```
-
-close file
-```:x```
-
 make file executable:
-```chmod +x /home/chrei/code/Ubuntu-setup/scripts/autopair```
+```chmod +x /home/chrei/code/Ubuntu-setup/scripts/autopairBose```
 
 create alias (commandline abbreviation):
 ```
 vim ~/.bashrc
-alias cb='/home/chrei/code/Ubuntu-setup/scripts/autopair'
+alias cb='/home/chrei/code/Ubuntu-setup/scripts/autopairBose'
 ```
-
-close file
-```:x```
 
 ### screenlogger
 install:
