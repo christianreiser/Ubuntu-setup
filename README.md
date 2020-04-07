@@ -12,6 +12,10 @@ nextcloud
 
 ```sudo apt-get install chromium-browser unity-tweak-tool htop python3-pip git vim exfat-utils exfat-fuse  python3-tk```
 
+### github set usr and pw automatically
+```git config --global user.name 'christianreiser'```
+```git config --global user.password 'myPassword'```
+
 ### Ubuntu software store
 ```pomodoro```
 ```LibreOffice```
