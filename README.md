@@ -57,6 +57,9 @@ nextcloud
 
 ```dconf load / < mysettings.ini```
 
+### autostart
+move files to```~/.config/autostart```
+
 ### connect bt device [2C:41:A1:CA:5F:E0] with custom command [cb]
 make file executable:
 ```chmod +x /home/chrei/code/Ubuntu-setup/scripts/autopairBose```
@@ -112,5 +115,6 @@ create alias (commandline abbreviation):
 vim ~/.bashrc
 alias logk='/home/chrei/Ubuntu-setup/scripts/logkeys'
 ```
+
 
 
