@@ -20,11 +20,6 @@ nextcloud
 ### Ubuntu software store
 ```pomodoro```
 
-```LibreOffice```
-
-```Android Studio```
-
-```Okular```
 
 ### pip
 ```pip3 install --user numpy pandas tensorflow scikit-image Cython contextlib2 pillow lxml jupyter matplotlib```
@@ -33,7 +28,9 @@ nextcloud
 ### snap
 ```sudo snap install pycharm-community --classic```
 
-```sudo snap install pdftk anki-woodrow audacity vlc```
+```sudo snap install android-studio --classic```
+
+```sudo snap install pdftk anki-woodrow audacity vlc gimp okular libreoffice```
 
 
 #### next/cloud MAYBE BETTER FORM SOFTWARE CENTER: NEXTCLOUD CLIENT
