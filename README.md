@@ -14,6 +14,7 @@ nextcloud
 
 ### github set usr and pw automatically
 ```git config --global user.name 'christianreiser'```
+
 ```git config --global user.password 'myPassword'```
 
 ### Ubuntu software store
