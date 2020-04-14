@@ -102,27 +102,44 @@ refresh bashrc
 ### keylogger (```https://github.com/kernc/logkeys/blob/master/INSTALL```)
 
 ```sudo apt-get update```
+
 ```sudo apt-get install autotools-dev autoconf```
+
 ```git clone https://github.com/kernc/logkeys.git && cd logkeys```
+
 ```./autogen.sh     # generate files for build```
+
 ```cd build  && ../configure```
+
 ```make```
+
 ``` sudo make install```
+
 ```git clean -xdf # clean```
 
+
 open/create file in vi:
+
 ```vi /home/chrei/code/Ubuntu-setup/scripts/logkeys```
 
+
 paste the following in the file:
+
 ```sudo logkeys -s --keymap=keymap_de --output=/home/chrei/screenLogger/keylogger/logkeys.log```
 
+
 close file
+
 ```:x```
 
+
 make file executable:
+
 ```chmod +x /home/chrei/code/Ubuntu-setup/scripts/logkeys```
 
+
 create alias (commandline abbreviation):
+
 ```
 vim ~/.bashrc
 alias logk='/home/chrei/code/Ubuntu-setup/scripts/logkeys'
