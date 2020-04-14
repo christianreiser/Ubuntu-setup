@@ -92,7 +92,7 @@ make file executable:
 create alias (commandline abbreviation):
 ```
 vim ~/.bashrc
-alias logs='/home/chrei/Ubuntu-setup/scripts/screenlogger'
+alias logs='/home/chrei/code/Ubuntu-setup/scripts/screenlogger'
 ```
 
 refresh bashrc 
@@ -119,7 +119,7 @@ make file executable:
 create alias (commandline abbreviation):
 ```
 vim ~/.bashrc
-alias logk='/home/chrei/Ubuntu-setup/scripts/logkeys'
+alias logk='/home/chrei/code/Ubuntu-setup/scripts/logkeys'
 ```
 
 refresh bashrc 
