@@ -99,10 +99,16 @@ refresh bashrc
 ```source ~/.bashrc```
 
 
-### keylogger
-source: https://github.com/kernc/logkeys
+### keylogger (```https://github.com/kernc/logkeys/blob/master/INSTALL```)
 
-maybe installation needed
+```sudo apt-get update```
+```sudo apt-get install autotools-dev autoconf```
+```git clone https://github.com/kernc/logkeys.git && cd logkeys```
+```./autogen.sh     # generate files for build```
+```cd build  && ../configure```
+```make```
+``` sudo make install```
+```git clean -xdf # clean```
 
 open/create file in vi:
 ```vi /home/chrei/code/Ubuntu-setup/scripts/logkeys```
