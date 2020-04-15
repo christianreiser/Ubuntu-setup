@@ -20,6 +20,10 @@ nextcloud
 ### Ubuntu software store
 ```pomodoro```
 
+#### compose key
+```GNOME Tweaks``` -> ```Keyboard&Mouse``` -> ```Compose Key``` -> activate -> set right ctrl
+
+
 
 ### pip
 ```pip3 install --user numpy pandas tensorflow scikit-image Cython contextlib2 pillow lxml jupyter matplotlib```
