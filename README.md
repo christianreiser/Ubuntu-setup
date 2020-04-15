@@ -60,6 +60,10 @@ nextcloud
 
 ```dconf load / < mysettings.ini```
 
+#### clock-show-seconds
+```gsettings set org.gnome.desktop.interface clock-show-seconds true```
+
+
 ### autostart
 move files to```~/.config/autostart```
 
