@@ -20,6 +20,10 @@ nextcloud
 ### Ubuntu software store
 ```pomodoro```
 
+#### compose key
+```GNOME Tweaks``` -> ```Keyboard&Mouse``` -> ```Compose Key``` -> activate -> set right ctrl
+
+
 
 ### pip
 ```pip3 install --user numpy pandas tensorflow scikit-image Cython contextlib2 pillow lxml jupyter matplotlib```
@@ -60,6 +64,10 @@ nextcloud
 
 ```dconf load / < mysettings.ini```
 
+#### clock-show-seconds
+```gsettings set org.gnome.desktop.interface clock-show-seconds true```
+
+
 ### autostart
 move files to```~/.config/autostart```
 
@@ -92,32 +100,59 @@ make file executable:
 create alias (commandline abbreviation):
 ```
 vim ~/.bashrc
-alias logk='/home/chrei/Ubuntu-setup/scripts/screenlogger'
+alias logs='/home/chrei/code/Ubuntu-setup/scripts/screenlogger'
 ```
 
+refresh bashrc 
+```source ~/.bashrc```
 
-### keylogger
-source: https://github.com/kernc/logkeys
 
-maybe installation needed
+### keylogger (```https://github.com/kernc/logkeys/blob/master/INSTALL```)
+
+```sudo apt-get update```
+
+```sudo apt-get install autotools-dev autoconf```
+
+```git clone https://github.com/kernc/logkeys.git && cd logkeys```
+
+```./autogen.sh     # generate files for build```
+
+```cd build  && ../configure```
+
+```make```
+
+``` sudo make install```
+
+```git clean -xdf # clean```
+
 
 open/create file in vi:
+
 ```vi /home/chrei/code/Ubuntu-setup/scripts/logkeys```
 
+
 paste the following in the file:
+
 ```sudo logkeys -s --keymap=keymap_de --output=/home/chrei/screenLogger/keylogger/logkeys.log```
 
+
 close file
+
 ```:x```
 
+
 make file executable:
+
 ```chmod +x /home/chrei/code/Ubuntu-setup/scripts/logkeys```
 
+
 create alias (commandline abbreviation):
+
 ```
 vim ~/.bashrc
-alias logk='/home/chrei/Ubuntu-setup/scripts/logkeys'
+alias logk='/home/chrei/code/Ubuntu-setup/scripts/logkeys'
 ```
 
-
+refresh bashrc 
+```source ~/.bashrc```
 
