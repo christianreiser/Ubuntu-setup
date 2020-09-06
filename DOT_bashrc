@@ -133,4 +133,9 @@ alias logk='/home/chrei/code/Ubuntu-setup/scripts/logkeys'
 alias logs='/home/chrei/code/Ubuntu-setup/scripts/screenlogger'
 alias sus='systemctl suspend'
 alias po='systemctl poweroff'
-alias hi='sudo systemctl hibernate'
+alias hn='sudo systemctl hibernate'
+alias woff='nmcli radio wifi off'
+alias won='nmcli radio wifi on'
+
+# flutter export path
+export PATH="$PATH:~/code/flutter/bin"
