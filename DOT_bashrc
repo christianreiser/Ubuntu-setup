@@ -136,6 +136,10 @@ alias po='systemctl poweroff'
 alias hn='sudo systemctl hibernate'
 alias woff='nmcli radio wifi off'
 alias won='nmcli radio wifi on'
+alias db='bluetoothctl disconnect'
 
 # flutter export path
 export PATH="$PATH:~/code/flutter/bin"
+
+# reload .bashrc:
+# . ~/.bashrc
