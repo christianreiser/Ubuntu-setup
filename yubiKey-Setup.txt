@@ -31,3 +31,9 @@ sudo echo test
 #password, enter, press key
 #should work
 #repeat with backup key
+
+# ubuntu login
+sudo vi /etc/pam.d/gdm-password
+# Add the line below after the “@include common-auth” line.
+auth       required   pam_u2f.so
+:x #save and close)
