@@ -1,0 +1,33 @@
+https://accounts.google.com/AddSession
+Sign in - Google Accounts
+
+
+
+YubiKey setup: https://support.yubico.com/hc/en-us/articles/360016649099-Ubuntu-Linux-Login-Guide-U2F
+
+sudo apt update && sudo apt dist-upgrade
+sudp apt install libpam-u2f
+#Insert your U2F Key.
+mkdir -p ~/.config/Yubico
+pamu2fcfg > ~/.config/Yubico/u2f_keys
+# key should blink, then touch it
+touch it and terminal should ouput "...challenge..."
+# plug in backup key
+pamu2fcfg -n >> ~/.config/Yubico/u2f_keys
+When your device begins flashing, touch the metal contact to confirm the association.
+
+# key for sudo, ATTENTION! DON'T CLOSE THE SUDO TERMINAL WINDOW UNTIL IT WORKS!
+sudo vi /etc/pam.d/sudo
+# Add the line below after the “@include common-auth” line.
+auth    required        pam_u2f.so
+# save but DONT CLOSE THE WINDOW
+
+#open new terminal tab
+#remove key
+sudo echo test
+#should not work
+# insert key
+sudo echo test
+#password, enter, press key
+#should work
+#repeat with backup key
